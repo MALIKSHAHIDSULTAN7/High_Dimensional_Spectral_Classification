@@ -19,7 +19,7 @@ warnings.filterwarnings('ignore')
 
 
 
-path = '/Users/sultm0a/Documents/NeurIPS_High_Dim_EX1A/Ex1A.hd5'
+path = 'specify_path'
 Data_Name = 'EX1A'
 only_reg = True
 
@@ -27,8 +27,8 @@ data_sets_indexes = ['ITER_1']
 np.random.seed(123)
 torch.manual_seed(123)
 epochs = 40
-save_path = '/Users/sultm0a/High_Dimensional_Spectral_Classification/Results'
-save_path_data = '/Users/sultm0a/Documents/NeurIPS_High_Dim_'+ str(Data_Name) + '/Data/'
+save_path = 'Path_'
+save_path_data = 'Path_'+ str(Data_Name) + '/Data/'
 for dataset_name in data_sets_indexes:
     print('Working on Data Set {}'.format(dataset_name))
     print(60*'#')
